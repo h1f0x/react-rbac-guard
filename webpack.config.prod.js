@@ -31,6 +31,7 @@ module.exports = {
     },
     devtool: 'source-map',
     entry: './src/index.js',
+    mode: 'production',
     output: {
         filename: 'index.js',
         library: 'react-rbac-guard',
@@ -43,8 +44,10 @@ module.exports = {
         [
             {
                 test: /\.jsx$/,
-                exclude: /node_modules/,
-                loader: ['babel-loader'],
+                exclude: [
+                  path.resolve(__dirname, "/node_modules/"),
+                ],
+                loader: 'babel-loader',
             },
         ],
     },

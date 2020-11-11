@@ -1,6 +1,6 @@
 {
   "name": "react-rbac-guard",
-  "version": "0.0.3",
+  "version": "0.0.4",
   "description": "Module allowing to manage visibility of particular components depending on user credentials",
   "main": "./lib/index.js",
   "engines": {
@@ -14,16 +14,14 @@
   },
   "author": "Nurzhan Saktaganov <nur92world@mail.ru>",
   "license": "MIT",
-  "dependencies": {
-    "uglifyjs-webpack-plugin": "^2.0.1"
-  },
   "devDependencies": {
+    "@babel/cli": "^7.0.0",
     "babel-cli": "^6.24.1",
     "babel-core": "^6.25.0",
     "babel-loader": "^7.1.1",
+    "babel-plugin-transform-object-rest-spread": "^6.26.0",
     "babel-plugin-transform-react-constant-elements": "^6.23.0",
     "babel-plugin-transform-react-remove-prop-types": "^0.4.6",
-    "babel-plugin-transform-object-rest-spread": "^6.26.0",
     "babel-polyfill": "^6.23.0",
     "babel-preset-env": "^1.5.2",
     "babel-preset-react": "^6.24.1",
@@ -41,13 +39,13 @@
     "husky": "^1.0.0-rc.15",
     "isparta": "^4.0.0",
     "jsdom": "^11.2.0",
-    "mocha": "^3.4.2",
+    "mocha": "^8.2.1",
     "prop-types": "^15.5.10",
-    "react": "^15.6.1",
-    "react-dom": "^15.6.2",
+    "react": "^17.0.1",
+    "react-dom": "^17.0.1",
     "sinon": "^2.3.6",
     "sinon-chai": "^2.11.0",
-    "webpack": "^3.0.0"
+    "webpack": "^5.4.0"
   },
   "peerDependencies": {
     "react": ">0.14.0 || >15.0.0",
